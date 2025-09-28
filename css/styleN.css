@@ -1798,14 +1798,16 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     opacity: 0;
 }
 
-/* 媒体查询 - 统一整理 */
-@media screen and (max-width: 992px) {
+/* 适配大尺寸 iPad 横屏（如 Pro 12.9英寸） */
+@media screen and (max-width: 1366px) and (orientation: landscape) {}
+/* 适配 iPad 横屏（如 Pro 11英寸） */
+@media screen and (max-width: 1194px) and (orientation: landscape){
     body {
         font-size: 16px;
     }
 }
-
-@media screen and (max-width: 768px) {
+/* 适配 iPad 竖屏（如 mini/基础款） */
+@media screen and (max-width: 768px) and (min-width: 391px){
     #colorlib-aside {
         width: 300px;
         -moz-transform: translateX(-300px);
@@ -1827,7 +1829,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 
     #colorlib-main {
         width: 100%;
-        padding: 0 1em;
+        /*padding: 0 1em;*/
     }
 
     #colorlib-hero .flexslider .flex-control-nav {
@@ -1929,12 +1931,13 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
         visibility: visible;
     }
 }
-
-@media screen and (max-width: 480px) {
+/* 适配 iPhone 横屏（大部分型号） */
+@media screen and (max-width: 852px) and (orientation: landscape) {}
+/* 适配大屏 iPhone 竖屏（如 6.7英寸 Plus/Pro Max） */
+@media screen and (max-width: 430px) {
     figure figcaption {
         width: 100%;
     }
-
     #colorlib-hero .flexslider .slider-text {
         display: table;
         opacity: 0;
@@ -1946,3 +1949,5 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
         z-index: 9;
     }
 }
+/* 适配大部分 iPhone 竖屏（如 6.1英寸基础款） */
+@media screen and (max-width: 390px) {}
