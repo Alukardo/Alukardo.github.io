@@ -344,6 +344,7 @@ figure figcaption {
     min-height: 500px;
     vertical-align: middle;
     padding-top: 70%;
+    padding-bottom: 10%;
     z-index: 9;
 }
 
@@ -1801,7 +1802,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 /* 适配大尺寸 iPad 横屏（如 Pro 12.9英寸） */
 @media screen and (max-width: 1366px) and (orientation: landscape) {
     #colorlib-hero .flexslider .slider-text {
-        padding-top: 65%;
+        padding-bottom: 10%;
     }
     #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
         font-size: 40px;
@@ -1873,7 +1874,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
         opacity: 0;
         min-height: 500px;
         vertical-align: middle;
-        padding-top: 90%;
+        padding-bottom: 10%;
         z-index: 9;
         float: right;
     }
