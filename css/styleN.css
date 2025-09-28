@@ -1799,7 +1799,27 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 }
 
 /* 适配大尺寸 iPad 横屏（如 Pro 12.9英寸） */
-@media screen and (max-width: 1366px) and (orientation: landscape) {}
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+    #colorlib-hero .flexslider .slider-text {
+        padding-top: 65%;
+    }
+    #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+        font-size: 40px;
+    }
+    #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        font-size: 14px;
+    }
+    .container{
+        width: 160%;
+    }
+    .panel-heading a{
+        font-size: 12px;
+        padding: 20px 30px;
+    }
+    .colorlib-heading{
+        font-size:22px
+    }
+}
 /* 适配 iPad 横屏（如 Pro 11英寸） */
 @media screen and (max-width: 1194px) and (orientation: landscape){
     body {
@@ -1817,11 +1837,22 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
         transform: translateX(-300px);
         padding-top: 4em;
     }
+    #colorlib-aside #colorlib-main-menu .collapse {
+        display: block !important;
 
+    }
     #colorlib-aside #colorlib-main-menu ul {
         margin: 0 0 2em 0;
     }
-
+    #colorlib-aside #colorlib-main-menu ul li {
+        margin: 0 0 10px 0;
+        padding: 0;
+        list-style: none;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
     #colorlib-aside .colorlib-footer {
         position: relative;
         bottom: 0;
@@ -1829,12 +1860,22 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 
     #colorlib-main {
         width: 100%;
-        /*padding: 0 1em;*/
     }
 
     #colorlib-hero .flexslider .flex-control-nav {
         right: 20px;
         top: 100px;
+    }
+
+    #colorlib-hero .flexslider .slider-text {
+        width: 100%;
+        display: table;
+        opacity: 0;
+        min-height: 500px;
+        vertical-align: middle;
+        padding-top: 90%;
+        z-index: 9;
+        float: right;
     }
 
     #colorlib-hero .flexslider .slider-text > .slider-text-inner {
@@ -1844,13 +1885,21 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
         font-size: 28px;
     }
-
+    #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-family: "Quicksand", Arial, sans-serif;
+        padding-left: 50%;
+        text-align: left;
+    }
     #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
         font-size: 30px;
     }
 
     #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
-        width: 100%;
+        width: 30%;
     }
 
     .colorlib-narrow-content {
@@ -1867,6 +1916,8 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     .colorlib-contact {
         padding-top: 5em;
         padding-bottom: 8em;
+        padding-left: 4em;
+        padding-right: 5em;
     }
 
     .colorlib-heading {
@@ -1932,7 +1983,9 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     }
 }
 /* 适配 iPhone 横屏（大部分型号） */
-@media screen and (max-width: 852px) and (orientation: landscape) {}
+@media screen and (max-width: 852px) and (orientation: landscape) {
+
+}
 /* 适配大屏 iPhone 竖屏（如 6.7英寸 Plus/Pro Max） */
 @media screen and (max-width: 430px) {
     figure figcaption {
