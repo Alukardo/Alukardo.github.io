@@ -107,8 +107,7 @@ figure figcaption {
 #colorlib-aside .author-img {
     width: 150px;
     height: 150px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -1348,8 +1347,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     width: 100px;
     height: 100px;
     display: table;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 .colorlib-counters .icon i {
@@ -1780,7 +1778,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 .colorlib-nav-toggle {
     position: fixed;
     left: -5px;
-    top: 0px;
+    top: 0;
     z-index: 9999;
     cursor: pointer;
     opacity: 1;
@@ -1945,10 +1943,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     .colorlib-about,
     .colorlib-services,
     .colorlib-contact {
-        padding-top: 5em;
-        padding-bottom: 8em;
-        padding-left: 4em;
-        padding-right: 5em;
+        padding: 5em 5em 8em 4em;
     }
 
     .colorlib-heading {
@@ -2066,10 +2061,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     .colorlib-about,
     .colorlib-services,
     .colorlib-contact {
-        padding-top: 2em;
-        padding-bottom: 4em;
-        padding-left: 1em;
-        padding-right: 2em;
+        padding: 2em 2em 4em 1em;
         font-size: 14px;
     }
     .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
